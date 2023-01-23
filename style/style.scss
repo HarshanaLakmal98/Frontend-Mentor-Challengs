@@ -1,0 +1,74 @@
+@import "reset";
+@import "variable";
+@import "breakpoints";
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        border-radius: 1rem;
+        width: 100%;
+        height: fit-content;
+        max-width: map-get($breakpoints, "mobile");
+        background: $White;
+        @extend %flex-column;
+        padding: $padding-base*2;
+        .image{
+            img{
+                border-radius: .5rem;
+                display: block;
+                width: 100%;
+            }
+    
+        }
+        .content{
+            @extend %flex-column;
+            font-family: $fonts;
+            text-align: center;
+            padding: $padding-base*2 0;
+            h2{
+                color: $DarkBlue;
+                font-weight: $font-bold;
+            }
+            p{
+                color: $Grayish-blue;
+                font-size: $font-size;
+            }
+        }
+        @include desktop{
+            max-width: map-get($breakpoints,"desktop" );
+            padding: $padding-base*8;
+            border-radius: 3rem;
+            gap: 2rem;
+            .image{
+                img{
+                    border-radius: 2rem;
+                }
+            }
+            .content{
+                margin: $margin-base*4;
+                padding: $padding-base*3;
+                gap: 2rem;
+                margin-bottom: $margin-base*12;
+                h2{
+                    font-size: $font-size*5;
+                }
+                p{
+                    font-size: $font-size*4;
+                }
+            }
+
+        }
+        margin: 1rem;
+    }
+}
