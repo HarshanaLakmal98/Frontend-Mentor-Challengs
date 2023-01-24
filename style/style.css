@@ -50,7 +50,8 @@ body {
 .wrapper .container .image img {
   border-radius: 0.5rem;
   display: block;
-  width: 100%;
+  width: 90%;
+  height: auto;
 }
 .wrapper .container .content {
   font-family: sans-serif;
