@@ -65,26 +65,3 @@ body {
   color: hsl(220deg, 15%, 55%);
   font-size: 15px;
 }
-@media screen and (min-width: 1440px) {
-  .wrapper .container {
-    max-width: 1440px;
-    padding: 4rem;
-    border-radius: 3rem;
-    gap: 2rem;
-  }
-  .wrapper .container .image img {
-    border-radius: 2rem;
-  }
-  .wrapper .container .content {
-    margin: 2rem;
-    padding: 1.5rem;
-    gap: 2rem;
-    margin-bottom: 6rem;
-  }
-  .wrapper .container .content h2 {
-    font-size: 75px;
-  }
-  .wrapper .container .content p {
-    font-size: 60px;
-  }
-}

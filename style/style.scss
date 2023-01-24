@@ -45,30 +45,30 @@
                 font-size: $font-size;
             }
         }
-        @include desktop{
-            max-width: map-get($breakpoints,"desktop" );
-            padding: $padding-base*8;
-            border-radius: 3rem;
-            gap: 2rem;
-            .image{
-                img{
-                    border-radius: 2rem;
-                }
-            }
-            .content{
-                margin: $margin-base*4;
-                padding: $padding-base*3;
-                gap: 2rem;
-                margin-bottom: $margin-base*12;
-                h2{
-                    font-size: $font-size*5;
-                }
-                p{
-                    font-size: $font-size*4;
-                }
-            }
+        // @include desktop{
+        //     max-width: map-get($breakpoints,"desktop" );
+        //     padding: $padding-base*8;
+        //     border-radius: 3rem;
+        //     gap: 2rem;
+        //     .image{
+        //         img{
+        //             border-radius: 2rem;
+        //         }
+        //     }
+        //     .content{
+        //         margin: $margin-base*4;
+        //         padding: $padding-base*3;
+        //         gap: 2rem;
+        //         margin-bottom: $margin-base*12;
+        //         h2{
+        //             font-size: $font-size*5;
+        //         }
+        //         p{
+        //             font-size: $font-size*4;
+        //         }
+        //     }
 
-        }
+        // }
         margin: 1rem;
     }
 }
